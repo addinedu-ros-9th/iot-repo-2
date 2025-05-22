@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow {
+    background-color: #e0e0e0;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget {
+    background-color: #e0e0e0;
+}
+
+</string>
+   </property>
+   <widget class="QFrame" name="frame_orange">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>981</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#frame_orange {
+    background-color: #FF9800;
+    border-radius: 8px;
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frameicon">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>10</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#frameicon {
+    background-image: url('/home/kbj/dev_ws/project/image/eldericon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+	border: none; 
+}
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_logout">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>30</y>
+       <width>88</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: transparent;  /* 배경 없음 */
+    border: none;                   /* 테두리 없음 */
+    color: black;                   /* 글자색: 검정 */
+    font-size: 14px;
+}
+QPushButton:hover {
+    color: #333333;  /* 마우스 오버 시 약간 더 진한 회색 */
+}</string>
+     </property>
+     <property name="text">
+      <string>[로그아웃]</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_main">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>10</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_main {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Elder Care</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_userGreeting">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>10</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_alertLog">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_alertLog {
+    background-image: url(/home/kbj/dev_ws/project/image/alertLog.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="vitalStatsFrame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>390</y>
+      <width>211</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#vitalStatsFrame
+ {
+    background-color: white;
+    border: 1px solid orange;
+    border-radius: 8px;
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_updown_heartbeat">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>81</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>[오늘의 건강]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_heartbeat">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>66</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>심박수</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>90</y>
+       <width>66</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>체온</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_temperature">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_updown_temperature">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>140</y>
+       <width>66</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>산소</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_oxygen">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>160</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_updown_oxygen">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="comboBox_user">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>80</y>
+      <width>86</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>111</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>케어 대상자 선택</string>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>301</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>80</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[케어 대상자 체온 기록 조회]</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="temperature_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>390</y>
+      <width>691</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_temperature">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>109</y>
+      <width>601</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#frame_temperature
+ {
+    background-color: white;
+    border: 1px solid orange;
+    border-radius: 8px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_temperatureimage">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>20</y>
+       <width>131</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label_temperatureimage {
+    background-image: url(/home/kbj/dev_ws/project/image/high-temperature-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="daily_temperature_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>411</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>메뉴</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_heartbeat"/>
+    <addaction name="action_5"/>
+    <addaction name="action_oxygen"/>
+    <addaction name="separator"/>
+    <addaction name="action_8"/>
+    <addaction name="separator"/>
+    <addaction name="action_medicine"/>
+    <addaction name="action_requestElderLink"/>
+    <addaction name="action_requestgaurdianLink"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_2">
+   <property name="text">
+    <string>[케어 대상자 건강이력]</string>
+   </property>
+  </action>
+  <action name="action_heartbeat">
+   <property name="text">
+    <string>심박수 기록 조회</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>체온 기록 조회</string>
+   </property>
+  </action>
+  <action name="action_oxygen">
+   <property name="text">
+    <string>산소 포화도 기록 조회</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>이상 알림 이력 조회</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>[서비스]</string>
+   </property>
+  </action>
+  <action name="action_medicine">
+   <property name="text">
+    <string>약 알람 시간 설정</string>
+   </property>
+  </action>
+  <action name="action_requestgaurdianLink">
+   <property name="text">
+    <string>보호자 연동 신청 확인</string>
+   </property>
+  </action>
+  <action name="action_requestElderLink">
+   <property name="text">
+    <string>케어 대상자 연동 요청</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
