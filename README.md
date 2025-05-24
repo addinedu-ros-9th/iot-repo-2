@@ -9,14 +9,14 @@
 3. [Tung Kit Overview](#-tung-kit-overview)  
 4. [Jira Timeline](#-jira-timeline)  
 5. [Team Members & Roles](#-team-members--roles)  
-6. [Tech Stack](#-tech-stack)  
-7. [User Requirements](#-user-requirements)  
-8. [System Requirements](#-system-requirements)  
-9. [System Architecture](#-system-architecture)  
+6. [Tech Stack](#️-tech-stack)  
+7. [User Requirements](#️-user-requirements)  
+8. [System Requirements](#️-system-requirements)  
+9. [System Architecture](#️-system-architecture)  
 10. [Interface Specification](#-interface-specification)  
 11. [Sequence Diagram](#-sequence-diagram)  
 12. [User Scenario](#-user-scenario)  
-13. [Entity-Relationship Diagram](#-entity-relationship-diagram)  
+13. [Entity-Relationship Diagram](#️-entity-relationship-diagram)  
 14. [Conclusion & Improvement Points](#-conclusion--improvement-points)
 
 
@@ -59,9 +59,6 @@
 
 ## 🙋‍♂️ User Requirements
 
-<details>
-<summary> 사용자 요구사항 보기</summary>
-
 | ID             | 기능명                          | 확인 |
 |----------------|--------------------------------|------|
 | UR-01          | 평상시 건강 상태를 알고 싶다        | ✅  |
@@ -69,12 +66,7 @@
 | UR-03          | 실시간 모니터링을 하고 싶다         | ✅  |
 | UR-04          | 종합 통계 데이터를 조회하고 싶다     | ✅  |
 
-</details>
-
 ## ⚙️ System Requirements
-
-<details>
-<summary> 시스템 요구사항 보기</summary>
 
 | ID    | 기능명                 | 설명                          | 중요도 | 확인 |
 | ----- | ------------------- | --------------------------- | --- | -- |
@@ -97,7 +89,6 @@
 | SR-17 | 성별/연령별 통계 기능        | 집계된 통계 데이터 시각화              | R   | ✅  |
 | SR-18 | 실시간 센서 데이터 표시       | 실시간 센서 수치 표시                | R   | ✅  |
 | SR-19 | 실시간 데이터 감지 기능       | 위험 수치 실시간 감지 및 대응           | R   | ✅  |
-</details>
 
 ## 🏗️ System Architecture
 ![System_Architecture](Image/System_Architecture.jpg)
