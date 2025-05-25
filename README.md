@@ -177,7 +177,7 @@
 
 ![Scenario_1_Sign_Up_and_Device_Pairing](Image/Scenario_1_Sign_Up_and_Device_Pairing.png)
 ![Scenario_1_Sign_Up_and_Device_Pairing2](Image/Scenario_1_Sign_Up_and_Device_Pairing2.png)
-[![Scenario_1_Sign_Up_and_Device_Pairing_Thumbnail](Image/Scenario_1_Sign_Up_and_Device_Pairing_Thumbnail.png)]("https://youtu.be/lkPNc2Uu6Ok")
+[![Scenario_1_Sign_Up_and_Device_Pairing_Thumbnail](Image/Scenario_1_Sign_Up_and_Device_Pairing_Thumbnail.png)](https://youtu.be/lkPNc2Uu6Ok)
 
 
 
@@ -186,7 +186,7 @@
 <details>
 <summary> Scenario_2_Real_Time_Sensor_Monitoring</summary>
 
-[![Scenario_2_Real_Time_Sensor_Monitoring_Thumbnail](Image/Scenario_2_Real_Time_Sensor_Monitoring_Thumbnail.png)]("https://youtu.be/os7DjopYI2Y")
+[![Scenario_2_Real_Time_Sensor_Monitoring_Thumbnail](Image/Scenario_2_Real_Time_Sensor_Monitoring_Thumbnail.png)](https://youtu.be/os7DjopYI2Y)
 
 </details>
 
