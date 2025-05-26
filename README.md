@@ -107,7 +107,7 @@
 | GM  | Get Medicine Reminder | 서버로부터 약 복용 시간에 따른 약 이름 수신      |
 | ER  | Error Occur           | 서버에서 예기치 못한 에러 발생 시 에러 출력      |
 
-### **TCP Interface Specification**
+### **Device ↔ Server TCP Protocol Specification**
 | Interface ID | 기능 설명          | 송신자    | 수신자    | 데이터 형식 및 설명                                              |
 | ------------ | -------------- | ------ | ------ | -------------------------------------------------------- |
 | IF-01        | 사용자 확인 요청      | Serial | TCP    | `{SU}{TAG UID}{\n}` (TAG UID: 32자리)                     |
@@ -129,10 +129,10 @@
 | 이미 등록 완료 (valid = 1)  | 이미 등록된 케어대상자입니다.     | 409   |
 | 등록 가능                 | 등록 가능한 케어대상자입니다.     | 200   |
 
-### **API Interface Specification**
+### **Client ↔ Server HTTP Specification**
 
 <details>
-<summary> API 인터페이스 명세서 보기</summary>
+<summary> Client ↔ Server HTTP Specification 보기</summary>
 
 | ID    | 기능 설명               | Endpoint                          | Method | Request Data 요약                                           |
 | ----- | ------------------- | --------------------------------- | ------ | --------------------------------------------------------- |
